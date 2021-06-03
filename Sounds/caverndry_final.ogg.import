@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/caverndry_final.ogg-932827f9dc07d068bc2c795169f97f2d.oggstr"
+
+[deps]
+
+source_file="res://Sounds/caverndry_final.ogg"
+dest_files=[ "res://.import/caverndry_final.ogg-932827f9dc07d068bc2c795169f97f2d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

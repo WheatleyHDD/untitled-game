@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rolling.ogg-90c1914f7c71ad38724c00fba7f0ed22.oggstr"
+
+[deps]
+
+source_file="res://Sounds/rolling.ogg"
+dest_files=[ "res://.import/rolling.ogg-90c1914f7c71ad38724c00fba7f0ed22.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/WheatleyHDD - Untitled Kakofony.wav-897764315a4ce1d2bf8beac30ae118dc.sample"
+
+[deps]
+
+source_file="res://Music/WheatleyHDD - Untitled Kakofony.wav"
+dest_files=[ "res://.import/WheatleyHDD - Untitled Kakofony.wav-897764315a4ce1d2bf8beac30ae118dc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

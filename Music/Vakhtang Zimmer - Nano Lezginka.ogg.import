@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Vakhtang Zimmer - Nano Lezginka.ogg-44211dd03b68b79f746fdd78edf1d99a.oggstr"
+
+[deps]
+
+source_file="res://Music/Vakhtang Zimmer - Nano Lezginka.ogg"
+dest_files=[ "res://.import/Vakhtang Zimmer - Nano Lezginka.ogg-44211dd03b68b79f746fdd78edf1d99a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

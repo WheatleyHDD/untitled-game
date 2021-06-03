@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/glwzbll - Classic Masked Robbery.ogg-8521ff2636a41adc64d0927dd4c56bd9.oggstr"
+
+[deps]
+
+source_file="res://Music/glwzbll - Classic Masked Robbery.ogg"
+dest_files=[ "res://.import/glwzbll - Classic Masked Robbery.ogg-8521ff2636a41adc64d0927dd4c56bd9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

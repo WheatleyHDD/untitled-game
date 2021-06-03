@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Testing-With-Nature-_Funnel_-Harry-Callaghan.ogg-980b48f11a0b2066f29152967c726266.oggstr"
+
+[deps]
+
+source_file="res://Music/Testing-With-Nature-_Funnel_-Harry-Callaghan.ogg"
+dest_files=[ "res://.import/Testing-With-Nature-_Funnel_-Harry-Callaghan.ogg-980b48f11a0b2066f29152967c726266.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

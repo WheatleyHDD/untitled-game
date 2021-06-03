@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/glwzbll - Generic Club Heist Song.ogg-836d02c1b2b7fb37c77f0e643b8a2948.oggstr"
+
+[deps]
+
+source_file="res://Music/glwzbll - Generic Club Heist Song.ogg"
+dest_files=[ "res://.import/glwzbll - Generic Club Heist Song.ogg-836d02c1b2b7fb37c77f0e643b8a2948.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Leila Wilson - Final Dreadnought 1.ogg-897eea532671559c28f36a888bff734d.oggstr"
+
+[deps]
+
+source_file="res://Music/Leila Wilson - Final Dreadnought 1.ogg"
+dest_files=[ "res://.import/Leila Wilson - Final Dreadnought 1.ogg-897eea532671559c28f36a888bff734d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

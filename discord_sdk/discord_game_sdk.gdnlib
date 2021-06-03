@@ -1,0 +1,16 @@
+[general]
+
+singleton=false
+load_once=true
+symbol_prefix="godot_"
+reloadable=true
+
+[entry]
+
+Windows.64="res://bin/windows-64/gdsdk.dll"
+X11.64="res://bin/linux-64/libgdsdk.so"
+
+[dependencies]
+
+Windows.64=[ "res://bin/windows-64/discord_game_sdk.dll" ]
+X11.64=[ "res://bin/linux-64/libdiscord_game_sdk.so" ]

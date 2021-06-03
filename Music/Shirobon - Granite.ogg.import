@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Shirobon - Granite.ogg-684741836e1c44fa3a56ed29d937e2a4.oggstr"
+
+[deps]
+
+source_file="res://Music/Shirobon - Granite.ogg"
+dest_files=[ "res://.import/Shirobon - Granite.ogg-684741836e1c44fa3a56ed29d937e2a4.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

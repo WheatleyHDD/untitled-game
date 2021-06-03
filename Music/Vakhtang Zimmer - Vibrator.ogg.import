@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Vakhtang Zimmer - Vibrator.ogg-86e36baae87d96fe56ac6e51e37bd2c1.oggstr"
+
+[deps]
+
+source_file="res://Music/Vakhtang Zimmer - Vibrator.ogg"
+dest_files=[ "res://.import/Vakhtang Zimmer - Vibrator.ogg-86e36baae87d96fe56ac6e51e37bd2c1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

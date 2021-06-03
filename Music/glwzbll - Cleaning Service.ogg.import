@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/glwzbll - Cleaning Service.ogg-8f82dbcfadf16cc1df723751f68322ea.oggstr"
+
+[deps]
+
+source_file="res://Music/glwzbll - Cleaning Service.ogg"
+dest_files=[ "res://.import/glwzbll - Cleaning Service.ogg-8f82dbcfadf16cc1df723751f68322ea.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

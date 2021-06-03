@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/glwzbll - How To Hide A Knife.ogg-4949cf7a3ca3d89ec0e8122d351bc497.oggstr"
+
+[deps]
+
+source_file="res://Music/glwzbll - How To Hide A Knife.ogg"
+dest_files=[ "res://.import/glwzbll - How To Hide A Knife.ogg-4949cf7a3ca3d89ec0e8122d351bc497.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

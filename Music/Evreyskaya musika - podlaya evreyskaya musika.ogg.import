@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Evreyskaya musika - podlaya evreyskaya musika.ogg-8e6658cec6cf98390be0d0f652fe6826.oggstr"
+
+[deps]
+
+source_file="res://Music/Evreyskaya musika - podlaya evreyskaya musika.ogg"
+dest_files=[ "res://.import/Evreyskaya musika - podlaya evreyskaya musika.ogg-8e6658cec6cf98390be0d0f652fe6826.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

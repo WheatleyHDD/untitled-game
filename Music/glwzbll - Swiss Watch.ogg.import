@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/glwzbll - Swiss Watch.ogg-361b705b73061c916b44eedd4b045aba.oggstr"
+
+[deps]
+
+source_file="res://Music/glwzbll - Swiss Watch.ogg"
+dest_files=[ "res://.import/glwzbll - Swiss Watch.ogg-361b705b73061c916b44eedd4b045aba.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

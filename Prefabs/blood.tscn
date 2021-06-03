@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 10, 0 )
+initial_velocity = 256.0
+angular_velocity = 162.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+tangential_accel = 100.0
+tangential_accel_random = 1.0
+damping = 100.0
+damping_random = 1.0
+angle = 720.0
+angle_random = 1.0
+scale = 26.0
+scale_random = 1.0
+color = Color( 0.6, 0, 0, 1 )
+anim_speed_random = 1.0
+
+[node name="blood" type="Particles2D"]
+emitting = false
+amount = 64
+lifetime = 0.4
+one_shot = true
+randomness = 1.0
+fixed_fps = 60
+process_material = SubResource( 1 )

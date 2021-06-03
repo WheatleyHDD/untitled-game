@@ -1,0 +1,96 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Prefabs/chr.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/boss/Sopka.gd" type="Script" id=2]
+[ext_resource path="res://Sounds/boss/5opka/voice3.wav" type="AudioStream" id=3]
+[ext_resource path="res://Sounds/boss/5opka/voice9.wav" type="AudioStream" id=4]
+[ext_resource path="res://Sounds/boss/5opka/voice7.wav" type="AudioStream" id=5]
+[ext_resource path="res://Sounds/boss/5opka/voice1.wav" type="AudioStream" id=6]
+[ext_resource path="res://Sounds/boss/5opka/voice10.wav" type="AudioStream" id=7]
+[ext_resource path="res://Sounds/boss/5opka/voice6.wav" type="AudioStream" id=8]
+[ext_resource path="res://Sounds/boss/5opka/voice5.wav" type="AudioStream" id=9]
+[ext_resource path="res://Sounds/boss/5opka/voice15.wav" type="AudioStream" id=10]
+[ext_resource path="res://Sounds/boss/5opka/voice14.wav" type="AudioStream" id=11]
+[ext_resource path="res://Sounds/boss/5opka/voice2.wav" type="AudioStream" id=12]
+[ext_resource path="res://Sounds/boss/5opka/voice8.wav" type="AudioStream" id=13]
+[ext_resource path="res://Sounds/boss_land.wav" type="AudioStream" id=14]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 18, 32 )
+
+[node name="Sopka" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="chr" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 13 )
+character = 3
+chr_name = 3
+
+[node name="ShootTimer" type="Timer" parent="."]
+process_mode = 0
+wait_time = 0.9
+one_shot = true
+
+[node name="idle1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+bus = "Dialogs"
+
+[node name="shoot1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+bus = "Dialogs"
+
+[node name="shoot2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+bus = "Dialogs"
+
+[node name="shoot3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+bus = "Dialogs"
+
+[node name="shoot4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+bus = "Dialogs"
+
+[node name="shoot5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+bus = "Dialogs"
+
+[node name="shoot6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+bus = "Dialogs"
+
+[node name="half_hp1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+bus = "Dialogs"
+
+[node name="half_hp2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+bus = "Dialogs"
+
+[node name="idle2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+bus = "Dialogs"
+
+[node name="idle3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+bus = "Dialogs"
+
+[node name="IdleTimer" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="land" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+volume_db = 16.0
+bus = "Sound"
+
+[node name="hurtTimer" type="Timer" parent="."]
+process_mode = 0
+wait_time = 0.1
+one_shot = true
+
+[connection signal="timeout" from="ShootTimer" to="." method="_on_ShootTimer_timeout"]
+[connection signal="timeout" from="IdleTimer" to="." method="_on_IdleTimer_timeout"]
+[connection signal="timeout" from="hurtTimer" to="." method="_on_hurtTimer_timeout"]

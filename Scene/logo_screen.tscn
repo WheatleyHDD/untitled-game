@@ -1,0 +1,135 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Sprites/logo/skobka.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/logo/untitled.png" type="Texture" id=2]
+[ext_resource path="res://old_icon.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/logo_screen.gd" type="Script" id=4]
+[ext_resource path="res://Sounds/logo/NullHit.wav" type="AudioStream" id=5]
+[ext_resource path="res://Sounds/logo/HitDeep.wav" type="AudioStream" id=6]
+
+[sub_resource type="Animation" id=1]
+resource_name = "logo"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Node2D/untitled:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 30, 30 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Node2D/skobka:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -760, 0 ), Vector2( -760, 0 ), Vector2( -310, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Node2D/skobka2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1.4, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 760, 0 ), Vector2( 760, 0 ), Vector2( 310, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Node2D:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2, 2.2, 2.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Node2D:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 3, 3.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("HitDeep:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, true, true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("NullHit:playing")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[node name="logo_screen" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="bg" type="Sprite" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 640, 360 )
+scale = Vector2( 25, 13 )
+texture = ExtResource( 3 )
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 640, 360 )
+
+[node name="untitled" type="Sprite" parent="Node2D"]
+scale = Vector2( 30, 30 )
+texture = ExtResource( 2 )
+
+[node name="skobka" type="Sprite" parent="Node2D"]
+position = Vector2( -760, 0 )
+texture = ExtResource( 1 )
+
+[node name="skobka2" type="Sprite" parent="Node2D"]
+position = Vector2( 760, 0 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+texture = ExtResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "logo"
+anims/logo = SubResource( 1 )
+
+[node name="HitDeep" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+bus = "Sound"
+
+[node name="NullHit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+bus = "Sound"
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

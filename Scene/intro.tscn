@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Videos/untitled_logo.ogv" type="VideoStream" id=1]
+
+[node name="intro" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+stream = ExtResource( 1 )
+volume_db = 20.0
+autoplay = true
+buffering_msec = 1000
+bus = "Music"
+__meta__ = {
+"_edit_use_anchors_": false
+}

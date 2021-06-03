@@ -1,0 +1,142 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Scripts/chr.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/chrs/base_body.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/chrs/base_head.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/chrs/boss/ghostlygirl.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/accesouries/anon.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/accesouries/shapka228.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/accesouries/usi.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/accesouries/ushi.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/accesouries/dedinside.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/accesouries/trollface.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/accesouries/glay.png" type="Texture" id=11]
+
+[sub_resource type="Animation" id=1]
+resource_name = "idle"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("head:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -13 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("body:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -13 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "walk"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("head:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -13 ), Vector2( 0, -11 ), Vector2( 0, -13 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("body:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -13 ) ]
+}
+
+[node name="chr" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="body" type="Sprite" parent="."]
+position = Vector2( 0, -13 )
+texture = ExtResource( 2 )
+offset = Vector2( 0, 16 )
+
+[node name="head" type="Sprite" parent="."]
+position = Vector2( 0, -13 )
+texture = ExtResource( 3 )
+offset = Vector2( 0, -18 )
+
+[node name="ghostlygirl" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0.415771, -39.6528 )
+rotation = 0.261799
+scale = Vector2( 0.172417, 0.172417 )
+texture = ExtResource( 4 )
+
+[node name="glay" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0.33009, 0.990734 )
+scale = Vector2( 0.631715, 0.631715 )
+texture = ExtResource( 11 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
+playback_process_mode = 0
+anims/idle = SubResource( 1 )
+anims/walk = SubResource( 2 )
+
+[node name="acces" type="Node2D" parent="."]
+
+[node name="maska_anon" type="Sprite" parent="acces"]
+visible = false
+position = Vector2( 3.83135, -35.0399 )
+rotation = 0.261799
+scale = Vector2( 0.221326, 0.221326 )
+texture = ExtResource( 5 )
+
+[node name="shapka228" type="Sprite" parent="acces"]
+visible = false
+position = Vector2( -4.87287, -59.3315 )
+rotation = -0.261799
+scale = Vector2( 0.0873015, 0.0873015 )
+texture = ExtResource( 6 )
+
+[node name="usi" type="Sprite" parent="acces"]
+visible = false
+position = Vector2( 0, -23.333 )
+scale = Vector2( 0.0181844, 0.0181844 )
+texture = ExtResource( 7 )
+
+[node name="ushi" type="Sprite" parent="acces"]
+visible = false
+position = Vector2( 0.792986, -41.6121 )
+scale = Vector2( -0.0983579, 0.0983579 )
+texture = ExtResource( 8 )
+
+[node name="dedinside" type="Sprite" parent="acces"]
+visible = false
+position = Vector2( 0.4078, -20.1314 )
+scale = Vector2( 0.0976623, 0.0545931 )
+texture = ExtResource( 9 )
+
+[node name="troll" type="Sprite" parent="acces"]
+visible = false
+position = Vector2( 0, 1 )
+scale = Vector2( 0.00848149, 0.00848149 )
+texture = ExtResource( 10 )

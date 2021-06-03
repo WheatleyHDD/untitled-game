@@ -1,0 +1,3 @@
+[gd_scene format=2]
+
+[node name="Dimas" type="KinematicBody2D"]

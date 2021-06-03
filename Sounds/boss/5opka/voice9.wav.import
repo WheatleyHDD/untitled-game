@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/voice9.wav-c5d1e3d63af76733572c292b3eeb7142.sample"
+
+[deps]
+
+source_file="res://Sounds/boss/5opka/voice9.wav"
+dest_files=[ "res://.import/voice9.wav-c5d1e3d63af76733572c292b3eeb7142.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

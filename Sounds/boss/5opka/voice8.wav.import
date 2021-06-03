@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/voice8.wav-e4650dffe882332ff0a453b9ea4a5ddc.sample"
+
+[deps]
+
+source_file="res://Sounds/boss/5opka/voice8.wav"
+dest_files=[ "res://.import/voice8.wav-e4650dffe882332ff0a453b9ea4a5ddc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/voice09.wav-287f78f57ac21b0861d958c44b49d705.sample"
+
+[deps]
+
+source_file="res://Sounds/boss/Dimas/voice09.wav"
+dest_files=[ "res://.import/voice09.wav-287f78f57ac21b0861d958c44b49d705.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

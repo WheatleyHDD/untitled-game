@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/voice7.wav-6f4c2d69dc07b6eb4d7dd0f9f31c9003.sample"
+
+[deps]
+
+source_file="res://Sounds/boss/5opka/voice7.wav"
+dest_files=[ "res://.import/voice7.wav-6f4c2d69dc07b6eb4d7dd0f9f31c9003.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

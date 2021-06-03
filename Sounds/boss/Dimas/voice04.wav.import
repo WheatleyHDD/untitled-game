@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/voice04.wav-afb41ab6d5bc72b0259220f4377e6a4e.sample"
+
+[deps]
+
+source_file="res://Sounds/boss/Dimas/voice04.wav"
+dest_files=[ "res://.import/voice04.wav-afb41ab6d5bc72b0259220f4377e6a4e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

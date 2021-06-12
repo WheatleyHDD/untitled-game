@@ -55,13 +55,7 @@ var lang = "ru"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	yield($"/root/Settings", "settingLoaded")
-	if $"/root/Settings".setting.has("frun"):
-		if $"/root/Settings".setting["frun"]:
-			if OS.get_locale() == "ru" or OS.get_locale() == "ru_RU":
-				lang = "ru"
-			else:
-				lang = "en"
+	pass
 
 
 func get_translation(what: String) -> String:

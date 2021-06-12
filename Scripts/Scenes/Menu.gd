@@ -70,6 +70,7 @@ func _on_CheckButton_toggled(button_pressed):
 func _on_ExitButton_pressed():
 	if !$CanvasLayer/fade/AnimationPlayer.is_playing():
 		get_tree().quit()
+		$"/root/Settings".save()
 
 
 

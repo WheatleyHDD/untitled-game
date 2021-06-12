@@ -46,7 +46,8 @@ func _ready():
 	$Player.enabled = true
 	$Player.stop_control = false
 	$boss/Dimas.connect(\"dies\", self, \"_boss_died\")
-	$Camera2D.follow = false
+	if !cutscene:
+		$Camera2D.follow = false
 	$\"/root/UI\".fade_in()
 	yield($\"/root/UI\", \"fade_finished\")
 	$Player.show_music_info(\"Generic Club Heist Song\", \"GLWZBLL\")

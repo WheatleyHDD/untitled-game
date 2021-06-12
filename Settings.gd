@@ -50,3 +50,8 @@ func loadAll():
 	if err == OK:
 		setting = f.get_var(true)
 		f.close()
+
+func _notification(what):
+	if what == MainLoop.NOTIFICATION_WM_QUIT_REQUEST:
+		save()
+		get_tree().quit() # default behavior
